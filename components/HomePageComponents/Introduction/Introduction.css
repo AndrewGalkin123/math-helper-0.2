@@ -1,0 +1,12 @@
+.introduction {
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+  margin-right: 10%;
+}
+
+.introduction h1 {
+  font-weight: 500;
+  font-size: 28px;
+  color: rgb(39, 39, 39);
+}
