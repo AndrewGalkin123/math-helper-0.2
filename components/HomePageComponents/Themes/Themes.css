@@ -1,0 +1,31 @@
+.themes {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.themes h1 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 30px;
+  color: rgb(39, 39, 39);
+}
+
+.themes table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+.themes table td {
+  border: 1px solid rgb(39, 39, 39);
+  padding: 8px;
+  text-align: left;
+  width: 50%;
+  color: rgb(53, 53, 53);
+}
+
+.themes table thead td {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}

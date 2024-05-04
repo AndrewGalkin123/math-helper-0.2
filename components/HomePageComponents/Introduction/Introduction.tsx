@@ -3,7 +3,7 @@ import "./Introduction.css";
 const Introduction: React.FC = () => {
   return (
     <div className="introduction">
-      <h1>Математика 2024. Все темы для школьников который нужно знать</h1>
+      <h1>Математика 2024. Все темы для школьников которые нужно знать</h1>
       <br></br>
       <img src="https://abrakadabra.fun/uploads/posts/2022-02/1644293895_1-abrakadabra-fun-p-risunki-matematike-3.png"></img>
       <p>
