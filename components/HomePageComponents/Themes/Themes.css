@@ -19,13 +19,19 @@
 .themes table td {
   border: 1px solid rgb(39, 39, 39);
   padding: 8px;
-  text-align: left;
   width: 50%;
   color: rgb(53, 53, 53);
 }
 
+.themes table tbody td:nth-child(even) {
+  padding-left: 24px;
+}
+
+.themes table tbody td ul li {
+  margin-bottom: 5px;
+}
+
 .themes table thead td {
-  text-align: center;
   font-size: 18px;
   font-weight: 400;
 }
