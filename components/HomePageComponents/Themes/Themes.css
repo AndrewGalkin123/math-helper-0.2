@@ -24,7 +24,7 @@
 }
 
 .themes table tbody td:nth-child(even) {
-  padding-left: 24px;
+  padding-left: 3%;
 }
 
 .themes table tbody td ul li {
