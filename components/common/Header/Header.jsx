@@ -6,10 +6,18 @@ const Header = () => {
       <h1>Math Symphony</h1>
       <nav>
         <ul>
-          <li>Учебные ресурсы</li>
-          <li>Статьи</li>
-          <li>Задачи и упражнения</li>
-          <li>О нас</li>
+          <a href="/learning-resources">
+            <li>Учебные ресурсы</li>
+          </a>
+          <a>
+            <li>Статьи</li>
+          </a>
+          <a>
+            <li>Задачи и упражнения</li>
+          </a>
+          <a>
+            <li>О нас</li>
+          </a>
         </ul>
       </nav>
     </header>
