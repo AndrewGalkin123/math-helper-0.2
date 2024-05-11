@@ -3,7 +3,9 @@ import "./Header.css";
 const Header = () => {
   return (
     <header>
-      <h1>Math Symphony</h1>
+      <a href="/">
+        <h1>Math Symphony</h1>
+      </a>
       <nav>
         <ul>
           <a href="/learning-resources">
