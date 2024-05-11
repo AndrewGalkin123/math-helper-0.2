@@ -1,11 +1,12 @@
 "use client";
 
-import { Menu } from "antd";
+import { Menu, Input } from "antd";
 import React, { useState } from "react";
 import type { MenuProps, MenuTheme } from "antd";
 import { CalculatorOutlined } from "@ant-design/icons";
 
 type MenuItem = Required<MenuProps>["items"][number];
+const { Search } = Input;
 
 const items: MenuItem[] = [
   {
@@ -17,6 +18,12 @@ const items: MenuItem[] = [
       { key: "2", label: "Рациональные" },
       { key: "3", label: "Иррациональные" },
       { key: "4", label: "Действия с числами" },
+      { key: "5", label: "Правила сравнения действительных чисел" },
+      { key: "6", label: "Признаки делимости чисел на 2, 3, 5, 9, 10" },
+      { key: "7", label: "Правила округления чисел" },
+      { key: "8", label: "Свойства корней" },
+      { key: "9", label: "Числовые промежутки" },
+      { key: "10", label: "Модуль действительного числа и его свойства" },
     ],
   },
   {
@@ -235,6 +242,11 @@ export default function learningResources() {
   };
   return (
     <main>
+      <Search
+        placeholder="Введите текст для поиска"
+        // onSearch={onSearch}
+        style={{ width: "100%", marginBottom: "20px" }}
+      />
       <Menu
         onClick={onClick}
         defaultOpenKeys={["sub1"]}
