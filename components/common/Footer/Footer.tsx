@@ -1,16 +1,57 @@
 import "./Footer.css";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
     <footer>
       <div className="container">
         <div className="row">
-          <div className="col">
-            <h1>Math Symphony</h1>
-            <p>
-              Math Symphony - это не просто сайт о математике, это место, где
-              математика становится мелодией.
-            </p>
+          <div className="footer-col">
+            <h4>История проекта</h4>
+            <ul>
+              <li>
+                <Link href="">Про нас</Link>
+              </li>
+              <li>
+                <Link href="">Наша команда</Link>
+              </li>
+              <li>
+                <Link href="">История проекта</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h4>Учебные материалы</h4>
+            <ul>
+              <li>
+                <Link href="">Учебные ресурсы</Link>
+              </li>
+              <li>
+                <Link href="">Статьи</Link>
+              </li>
+              <li>
+                <Link href="">Упражнения</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h4>Полезная информация</h4>
+            <ul>
+              <li>
+                <Link href="">FAQ</Link>
+              </li>
+              <li>
+                <Link href="">Полезные ссылки</Link>
+              </li>
+              <li>
+                <Link target="_blank" href="">
+                  Написать нам
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h4>Наши ссылки</h4>
             <div className="social-links">
               <a href="#">
                 <i className="fab fa-telegram"></i>
@@ -26,8 +67,6 @@ const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="col"></div>
-          <div className="col"></div>
         </div>
       </div>
     </footer>
