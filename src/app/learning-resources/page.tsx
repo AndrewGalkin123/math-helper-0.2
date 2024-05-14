@@ -4,6 +4,7 @@ import { Menu, Input } from "antd";
 import React, { useState } from "react";
 import type { MenuProps, MenuTheme } from "antd";
 import { CalculatorOutlined } from "@ant-design/icons";
+import { MainLearningInfo } from "../../../components/LearningResourcesComponents/MainLearningInfo/MainLearningInfo";
 
 type MenuItem = Required<MenuProps>["items"][number];
 const { Search } = Input;
@@ -14,16 +15,25 @@ const items: MenuItem[] = [
     label: "Действительные числа",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "1", label: "Натуральные" },
-      { key: "2", label: "Рациональные" },
-      { key: "3", label: "Иррациональные" },
-      { key: "4", label: "Действия с числами" },
-      { key: "5", label: "Правила сравнения действительных чисел" },
-      { key: "6", label: "Признаки делимости чисел на 2, 3, 5, 9, 10" },
-      { key: "7", label: "Правила округления чисел" },
-      { key: "8", label: "Свойства корней" },
-      { key: "9", label: "Числовые промежутки" },
-      { key: "10", label: "Модуль действительного числа и его свойства" },
+      { key: "integers", label: "Натуральные" },
+      { key: "rational-numbers", label: "Рациональные" },
+      { key: "irrational", label: "Иррациональные" },
+      { key: "actions-with-numbers", label: "Действия с числами" },
+      {
+        key: "real-number-comparisons",
+        label: "Правила сравнения действительных чисел",
+      },
+      {
+        key: "signs-of-numbers-divisibility",
+        label: "Признаки делимости чисел на 2, 3, 5, 9, 10",
+      },
+      { key: "rounding-numbers", label: "Правила округления чисел" },
+      { key: "roots-properties", label: "Свойства корней" },
+      { key: "numeric-intervals", label: "Числовые промежутки" },
+      {
+        key: "the-absolute-value",
+        label: "Модуль действительного числа и его свойства",
+      },
     ],
   },
   {
@@ -236,7 +246,7 @@ const items: MenuItem[] = [
 ];
 
 export default function learningResources() {
-  const [current, setCurrent] = useState("1");
+  const [current, setCurrent] = useState("integers");
   const onClick: MenuProps["onClick"] = (e) => {
     setCurrent(e.key);
   };
@@ -247,13 +257,16 @@ export default function learningResources() {
         // onSearch={onSearch}
         style={{ width: "100%", marginBottom: "20px" }}
       />
-      <Menu
-        onClick={onClick}
-        defaultOpenKeys={["sub1"]}
-        selectedKeys={[current]}
-        items={items}
-        style={{ width: "25%", flex: "auto" }}
-      />
+      <div style={{ display: "flex" }}>
+        <Menu
+          onClick={onClick}
+          defaultOpenKeys={["sub1"]}
+          selectedKeys={[current]}
+          items={items}
+          style={{ width: "25%", flex: "auto" }}
+        />
+        <MainLearningInfo theme={current} />
+      </div>
     </main>
   );
 }
