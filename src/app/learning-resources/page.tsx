@@ -2,9 +2,10 @@
 
 import { Menu, Input } from "antd";
 import React, { useState } from "react";
-import type { MenuProps, MenuTheme } from "antd";
+import type { MenuProps } from "antd";
 import { CalculatorOutlined } from "@ant-design/icons";
 import { MainLearningInfo } from "../../../components/LearningResourcesComponents/MainLearningInfo/MainLearningInfo";
+import { Searcher } from "../../../components/common/Search/Search";
 
 type MenuItem = Required<MenuProps>["items"][number];
 const { Search } = Input;
@@ -252,11 +253,7 @@ export default function learningResources() {
   };
   return (
     <main>
-      <Search
-        placeholder="Введите текст для поиска"
-        // onSearch={onSearch}
-        style={{ width: "100%", marginBottom: "20px" }}
-      />
+      <Searcher />
       <div style={{ display: "flex" }}>
         <Menu
           onClick={onClick}
