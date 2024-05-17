@@ -11,7 +11,7 @@ const Header = () => {
           <a href="/learning-resources">
             <li>Учебные ресурсы</li>
           </a>
-          <a>
+          <a href="/articles">
             <li>Статьи</li>
           </a>
           <a href="/tasks">
