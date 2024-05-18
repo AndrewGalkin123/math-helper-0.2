@@ -1,0 +1,32 @@
+.magazines {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+
+  justify-content: space-around;
+}
+
+.magazine {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+}
+
+.magazine img {
+  max-width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.magazine-title {
+  font-size: 1.5em;
+  margin: 8px 0;
+}
+
+.magazine-description {
+  font-size: 1em;
+  color: #666;
+}

@@ -1,0 +1,43 @@
+/* components/ArticlesPageComponents/Magazines/EventList.module.css */
+
+.container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.eventList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.eventItem {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.eventLink {
+  text-decoration: none;
+  color: #0070f3;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.eventLink:hover {
+  text-decoration: underline;
+}
+
+.eventSummary {
+  font-size: 14px;
+  color: #555;
+}
