@@ -14,12 +14,12 @@ const magazines = [
   },
   {
     title: "Journal of Differential Geometry",
-    src: "https://www.intlpress.com/site/pub/files/cover_image/for_item_page/bookpubs/00000573.jpg",
+    src: "differentialGeometry.png",
     description: "asd",
   },
   {
     title: "Journal of Algebra",
-    src: "https://ars.els-cdn.com/content/image/X00218693.jpg",
+    src: "algebraJournal.png",
     description: "asd",
   },
 ];
