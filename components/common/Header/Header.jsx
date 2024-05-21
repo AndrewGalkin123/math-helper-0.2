@@ -17,7 +17,7 @@ const Header = () => {
           <a href="/tasks">
             <li>Задачи и упражнения</li>
           </a>
-          <a>
+          <a href="/about-us">
             <li>О нас</li>
           </a>
         </ul>
