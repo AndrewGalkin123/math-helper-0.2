@@ -13,6 +13,7 @@
   list-style: none;
   margin-bottom: 10px;
   transition: all 100ms ease;
+  color: rgb(55, 55, 55);
 }
 
 .additional-info ul li:hover {

@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   gap: 16px;
   padding: 16px;
-
   justify-content: space-around;
 }
 
@@ -18,15 +17,18 @@
 
 .magazine img {
   max-width: 100%;
+  min-height: 480px;
   border-radius: 8px 8px 0 0;
 }
 
 .magazine-title {
   font-size: 1.5em;
   margin: 8px 0;
+  color: #2e2e2e;
+  font-weight: 500;
 }
 
 .magazine-description {
   font-size: 1em;
-  color: #666;
+  color: #2e2e2e;
 }

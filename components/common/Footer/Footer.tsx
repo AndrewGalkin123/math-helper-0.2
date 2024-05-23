@@ -10,13 +10,13 @@ const Footer: React.FC = () => {
             <h4>История проекта</h4>
             <ul>
               <li>
-                <Link href="">Про нас</Link>
+                <Link href="/about-us">Про нас</Link>
               </li>
               <li>
                 <Link href="">Наша команда</Link>
               </li>
               <li>
-                <Link href="">История проекта</Link>
+                <Link href="about-us">История проекта</Link>
               </li>
             </ul>
           </div>
@@ -24,13 +24,13 @@ const Footer: React.FC = () => {
             <h4>Учебные материалы</h4>
             <ul>
               <li>
-                <Link href="">Учебные ресурсы</Link>
+                <Link href="/learning-resources">Учебные ресурсы</Link>
               </li>
               <li>
-                <Link href="">Статьи</Link>
+                <Link href="/articles">Статьи</Link>
               </li>
               <li>
-                <Link href="">Упражнения</Link>
+                <Link href="/tasks">Упражнения</Link>
               </li>
             </ul>
           </div>

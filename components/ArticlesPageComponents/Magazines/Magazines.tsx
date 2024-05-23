@@ -33,7 +33,9 @@ const Magazines: React.FC = () => {
         flexDirection: "column",
       }}
     >
-      <h1>Обзоры научных журналов</h1>
+      <h1 style={{ fontWeight: "500", color: "#2e2e2e" }}>
+        Обзоры научных журналов
+      </h1>
       <div className="magazines">
         {magazines.map((item, index) => {
           return (
