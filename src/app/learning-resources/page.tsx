@@ -262,7 +262,9 @@ export default function learningResources() {
           items={items}
           style={{ width: "25%", flex: "auto" }}
         />
-        <MainLearningInfo theme={current} />
+        <div style={{ width: "75%", flex: "auto", padding: "20px" }}>
+          <MainLearningInfo theme={current} />
+        </div>
       </div>
     </main>
   );
