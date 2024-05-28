@@ -12,7 +12,7 @@ const { Search } = Input;
 
 const items: MenuItem[] = [
   {
-    key: "sub1",
+    key: "Real numbers",
     label: "Действительные числа",
     icon: <CalculatorOutlined />,
     children: [
@@ -42,8 +42,8 @@ const items: MenuItem[] = [
     label: "Проценты и пропорции",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "5", label: "Option 5" },
-      { key: "6", label: "Option 6" },
+      { key: "proportions", label: "Отношения, пропорции" },
+      { key: "definition-of-percentage", label: "Определение процента" },
     ],
   },
   {
@@ -51,10 +51,28 @@ const items: MenuItem[] = [
     label: "Уравнения и неравенства",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      {
+        key: "one-variable-equation",
+        label: "Уравнение с одной переменной",
+      },
+      {
+        key: "one-variable-inequality",
+        label: "Неравенство с одной переменной",
+      },
+      {
+        key: "equations-system",
+        label: "Определение решения системы уравнений",
+      },
+      {
+        key: "equations",
+        label:
+          "Методы решения простейших рациональных, иррациональных, показательных, логарифмических, тригонометрических уравнений",
+      },
+      {
+        key: "inequality",
+        label:
+          "Методы решения простейших линейных, квадратных, рациональных, показательных, логарифмических неравенств",
+      },
     ],
   },
   {
