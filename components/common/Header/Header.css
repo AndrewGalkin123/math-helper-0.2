@@ -1,3 +1,4 @@
+/* Основные стили */
 header {
   display: flex;
   width: 100%;
@@ -29,4 +30,24 @@ header ul li {
 header ul li:hover {
   color: rgb(255, 153, 0);
   cursor: pointer;
+}
+
+/* Адаптивные стили */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+  }
+
+  header ul {
+    margin-top: 10px;
+  }
+
+  header ul li {
+    margin: 0 10px;
+  }
 }
