@@ -80,10 +80,31 @@ const items: MenuItem[] = [
     label: "Выражения и их преобразование",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      {
+        key: "identities",
+        label:
+          "Определение тождественно равных выражений, тождественного преобразования выражения, тождества",
+      },
+      {
+        key: "monomial-polynomial",
+        label: "Определение одночлена и многочлена",
+      },
+      {
+        key: "monomial-polynomial-operations",
+        label:
+          "Правила сложения, вычитания и умножения одночленов и многочленов",
+      },
+      {
+        key: "fractional-rational",
+        label:
+          "Правила выполнения действий с дробными рациональными выражениями",
+      },
+      { key: "logarithm", label: "Определение и свойства логарифма" },
+      {
+        key: "periodic-functions",
+        label: "Определение синуса, косинуса, тангенса числового аргумента",
+      },
+      { key: "mixing-formulas", label: "Формулы сведения" },
     ],
   },
   {
