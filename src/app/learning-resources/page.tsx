@@ -112,10 +112,8 @@ const items: MenuItem[] = [
     label: "Числовые последовательности",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      { key: "arithmetic-progression", label: "Арифметическая прогрессия" },
+      { key: "geometric-progression", label: "Геометрическая прогрессия" },
     ],
   },
   {
@@ -123,10 +121,15 @@ const items: MenuItem[] = [
     label: "Функции, их основные свойства",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      {
+        key: "function-definition",
+        label:
+          "Определение функции, области определения, области значений функции, график функции",
+      },
+      {
+        key: "function-representation",
+        label: "Способы задания функций, основные свойства и графики функций",
+      },
     ],
   },
   {
@@ -134,10 +137,33 @@ const items: MenuItem[] = [
     label: "Производная функции",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      {
+        key: "derivative-definition",
+        label: "Определение производной функции в точке",
+      },
+      {
+        key: "derivative-meaning",
+        label: "Физический и геометрический смысл производной",
+      },
+      { key: "derivative-table", label: "Таблица производных функций" },
+      {
+        key: "derivative-rules",
+        label:
+          "Правила нахождения производной суммы, произведения, частного двух функций",
+      },
+      {
+        key: "function-growth-conditions",
+        label: "Достаточное условие роста (убывания) функции на промежутке",
+      },
+      {
+        key: "extrema",
+        label: "Экстремумы функции",
+      },
+      ,
+      {
+        key: "function-values",
+        label: "Определение наибольшего и наименьшего значений функции",
+      },
     ],
   },
   {
@@ -145,10 +171,16 @@ const items: MenuItem[] = [
     label: "Первообразная и определенный интеграл",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      {
+        key: "antiderivative-definition",
+        label:
+          "Определение первообразной функции, определенного интеграла, криволинейной трапеции",
+      },
+      { key: "antiderivative-table", label: "Таблица первообразных функций" },
+      {
+        key: "antiderivative-rules",
+        label: "Правила нахождения первообразных",
+      },
     ],
   },
   {
@@ -156,10 +188,28 @@ const items: MenuItem[] = [
     label: "Перестановки, комбинации, размещения ",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      {
+        key: "permutations-combinations-arrangements",
+        label:
+          "Определение перестановки, комбинации, размещения (без повторений)",
+      },
+      {
+        key: "combinatorial-rules",
+        label: "Комбинаторные правила суммы и произведения",
+      },
+      {
+        key: "probability-definition",
+        label: "Классическое определение вероятности события",
+      },
+      {
+        key: "sample-characteristics",
+        label: "Определение выборочных характеристик рядов данных",
+      },
+      {
+        key: "data-representation",
+        label:
+          "Графическая, табличная, текстовая и другие формы представления статистических данных",
+      },
     ],
   },
   {
