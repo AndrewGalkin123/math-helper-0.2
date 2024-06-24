@@ -217,10 +217,24 @@ const items: MenuItem[] = [
     label: "Элементарные геометрические фигуры",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      {
+        key: "basic-geometry-concepts",
+        label: "Понятие точки и прямой, луча, отрезка, ломаной, угла",
+      },
+      { key: "planimetry-axioms", label: "Аксиомы планиметрии" },
+      {
+        key: "angles-and-bisectors",
+        label: "Смежные и вертикальные углы, биссектриса угла",
+      },
+      {
+        key: "parallelAndPerpendicularLines",
+        label: "Параллельные и перпендикулярные прямые",
+      },
+      { key: "parallelLinesCriteria", label: "Признаки параллельности прямых" },
+      {
+        key: "thalesTheorem",
+        label: "Теорема Фалеса, обобщенная теорема Фалеса",
+      },
     ],
   },
   {
@@ -228,10 +242,15 @@ const items: MenuItem[] = [
     label: "Окружность и круг",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      { key: "circleElements", label: "Круг, окружность и их элементы" },
+      {
+        key: "anglesProperties",
+        label: "Центральные, вписанные углы и их свойства",
+      },
+      {
+        key: "tangentProperties",
+        label: "Касательная к окружности и ее свойства",
+      },
     ],
   },
   {
@@ -239,10 +258,39 @@ const items: MenuItem[] = [
     label: "Треугольники",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      {
+        key: "typesOfTriangles",
+        label: "Виды треугольников и их основные свойства",
+      },
+      {
+        key: "triangleCongruenceCriteria",
+        label: "Признаки равенства треугольников",
+      },
+      {
+        key: "mediansBisectorsAltitudes",
+        label: "Медиана, биссектриса, высота треугольника и их свойства",
+      },
+      {
+        key: "triangleMidline",
+        label: "Средняя линия треугольника и ее свойства",
+      },
+      {
+        key: "triangleCircles",
+        label:
+          "Окружность, описанная около треугольника, и окружность, вписанная в треугольник",
+      },
+      { key: "pythagoreanTheorem", label: "Теорема Пифагора" },
+      {
+        key: "rightTriangleRelations",
+        label:
+          "Соотношение между сторонами и углами прямоугольного треугольника",
+      },
+      { key: "sineTheorem", label: "Теорема синусов" },
+      { key: "cosineTheorem", label: "Теорема косинусов" },
+      {
+        key: "similarTriangles",
+        label: "Подобные треугольники, признаки подобия треугольников",
+      },
     ],
   },
   {
@@ -250,10 +298,25 @@ const items: MenuItem[] = [
     label: "Четырехугольники",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      { key: "quadrilateralElements", label: "Четырехугольник и его элементы" },
+      {
+        key: "parallelogramProperties",
+        label: "Параллелограмм, его свойства и признаки",
+      },
+      {
+        key: "rectangle-rhombus-square",
+        label: "Прямоугольник, ромб, квадрат и их свойства",
+      },
+      {
+        key: "trapezoidMidline",
+        label: "Трапеция, средняя линия трапеции свойства",
+      },
+      {
+        key: "circumscribedInscribedQuadrilaterals",
+        label:
+          "Вписанные в окружность и описанные около окружности четырехугольники",
+      },
+      { key: "quadrilateralAnglesSum", label: "Сумма углов четырехугольника" },
     ],
   },
   {
