@@ -159,7 +159,6 @@ const items: MenuItem[] = [
         key: "extrema",
         label: "Экстремумы функции",
       },
-      ,
       {
         key: "function-values",
         label: "Определение наибольшего и наименьшего значений функции",
@@ -324,10 +323,17 @@ const items: MenuItem[] = [
     label: "Многоугольники",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      { key: "polygonElements", label: "Многоугольник и его элементы" },
+      { key: "polygonPerimeter", label: "Периметр многоугольника" },
+      {
+        key: "regularPolygonProperties",
+        label: "Правильный многоугольник и его свойства",
+      },
+      {
+        key: "circumscribedInscribedPolygons",
+        label:
+          "Вписанные в окружность и описанные около окружности многоугольники",
+      },
     ],
   },
   {
@@ -335,10 +341,12 @@ const items: MenuItem[] = [
     label: "Геометрические величины и их измерения",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      {
+        key: "segmentCircleArcLength",
+        label: "Длина отрезка, окружности и её дуги",
+      },
+      { key: "angleMeasurement", label: "Величина угла, измерение углов" },
+      { key: "areaFormulas", label: "Формулы для вычисления площадей" },
     ],
   },
   {
@@ -346,10 +354,27 @@ const items: MenuItem[] = [
     label: "Координаты и векторы на плоскости",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      { key: "coordinateSystem", label: "Прямоугольная система координат" },
+      {
+        key: "distanceMidpoint",
+        label: "Формула для вычисления расстояния между двумя точками",
+      },
+      { key: "lineCircleEquation", label: "Уравнение прямой и окружности" },
+      {
+        key: "vectorConcepts",
+        label: "Понятие вектора, нулевого вектора, модуля вектора",
+      },
+      {
+        key: "vectorTypes",
+        label: "Коллинеарные векторы, противоположные векторы, равные векторы",
+      },
+      { key: "vectorCoordinates", label: "Координаты вектора" },
+      {
+        key: "vectorOperations",
+        label: "Сложение и вычитание векторов, умножение вектора на число",
+      },
+      { key: "angleBetweenVectors", label: "Угол между векторами" },
+      { key: "scalarProduct", label: "Скалярное произведение векторов" },
     ],
   },
   {
@@ -357,10 +382,11 @@ const items: MenuItem[] = [
     label: "Геометрические преобразования",
     icon: <CalculatorOutlined />,
     children: [
-      { key: "9", label: "Option 9" },
-      { key: "10", label: "Option 10" },
-      { key: "11", label: "Option 11" },
-      { key: "12", label: "Option 12" },
+      {
+        key: "geometricTransformations",
+        label: "Основные виды геометрических преобразований на плоскости",
+      },
+      { key: "figureEquality", label: "Равенство фигур" },
     ],
   },
   {
