@@ -1,13 +1,18 @@
 "use client";
 import { Input } from "antd";
+import { ChangeEventHandler, FC } from "react";
 
 const { Search } = Input;
 
-const Searcher = () => {
+interface SearcherProps {
+  onSearch: ChangeEventHandler<HTMLInputElement>;
+}
+
+const Searcher: FC<SearcherProps> = ({ onSearch }) => {
   return (
     <Search
       placeholder="Введите текст для поиска"
-      // onSearch={onSearch}
+      onChange={onSearch}
       style={{ width: "100%", marginBottom: "20px" }}
     />
   );
