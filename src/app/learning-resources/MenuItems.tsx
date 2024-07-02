@@ -1,5 +1,4 @@
 import { CalculatorOutlined } from "@ant-design/icons";
-import React from "react";
 
 type MenuItem = {
   key: string;

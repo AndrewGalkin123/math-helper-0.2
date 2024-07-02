@@ -5,16 +5,6 @@ interface MainLearningInfoProps {
   theme: string;
 }
 
-//  "title": "",
-//         "smallDescription": "",
-//         "firstSubtopic": "",
-//         "firstParagraph": "",
-//         "secondSubtopic": "",
-//         "secondParagraph": "",
-//         "thirdSubtopic": "",
-//         "thirdParagraph": "",
-//         "conclusion": ""
-
 const MainLearningInfo: React.FC<MainLearningInfoProps> = ({ theme }) => {
   const themeData = learningResources[theme];
 
