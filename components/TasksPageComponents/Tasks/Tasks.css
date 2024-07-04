@@ -1,0 +1,45 @@
+.tasks-container {
+  width: 75%;
+  padding: 20px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.tasks {
+  margin-top: 20px;
+}
+
+.task {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.task span {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.task-number {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.task-description {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 100px); /* Adjust width according to your design */
+  margin-top: 10px;
+}
+
+h1 {
+  color: #007bff;
+}

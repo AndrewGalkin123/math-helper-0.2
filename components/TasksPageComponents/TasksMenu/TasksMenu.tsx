@@ -16,7 +16,7 @@ const TasksMenu: React.FC<TasksMenuProps> = ({ items, onClick, current }) => {
   return (
     <Menu
       onClick={onClick}
-      defaultOpenKeys={["sub1"]}
+      defaultOpenKeys={["firstGrade"]}
       selectedKeys={current}
       items={items}
       style={{ width: "25%", flex: "auto" }}

@@ -1,1 +1,146 @@
-{}
+{
+    "numbersOperationsUpTo10": {
+        "title": "Сложение и вычитание до 10",
+        "firstTask": "1+1, 2+2",
+        "secondTask": "3-1, 4-2",
+        "thirdTask": "5+3, 6+2",
+        "fourthTask": "7-4, 8-5",
+        "fifthTask": "9+1",
+        "sixthTask": "10-3",
+        "seventhTask": "3+4",
+        "eightTask": "7-2",
+        "ninthTask": "9+10"
+    },
+    "numbersComparisonsUpTo10": {
+        "title": "Сравнение чисел до 10(>;<;=)",
+        "firstTask": "1 ? 2, 3 ? 1",
+        "secondTask": "4 ? 2, 3 ? 5",
+        "thirdTask": "6 ? 6, 5 ? 7",
+        "fourthTask": "8 ? 6, 7 ? 9",
+        "fifthTask": "10 ? 10",
+        "sixthTask": "9 ? 8",
+        "seventhTask": "2 ? 3",
+        "eightTask": "4 ? 3",
+        "ninthTask": "1 ? 5"
+    },
+    "simpleProblems": {
+        "title": "Решение простых задач",
+        "firstTask": "У Маши было 2 яблока, и она съела 1. Сколько яблок осталось?",
+        "secondTask": "У Вани 3 машины, и он подарил 1 другу. Сколько машин у Вани теперь?",
+        "thirdTask": "У Оли 4 карандаша, и она нашла еще 2. Сколько у нее карандашей?",
+        "fourthTask": "У Коли было 5 конфет, и он съел 2. Сколько конфет осталось?",
+        "fifthTask": "У Даши 6 мячиков, и она дала 3 подруге. Сколько мячиков у Даши осталось?",
+        "sixthTask": "У Саши 7 книг, и он подарил 2 сестре. Сколько книг у Саши?",
+        "seventhTask": "У Лены 8 кукол, и она купила еще 1. Сколько у Лены кукол?",
+        "eightTask": "У Пети 9 карандашей, и он потерял 3. Сколько карандашей осталось?",
+        "ninthTask": "У Кати 10 яблок, и она съела 4. Сколько яблок осталось?"
+    },
+    "multiplication": {
+        "title": "Таблица умножения",
+        "firstTask": "2*1, 2*2",
+        "secondTask": "3*8, 3*3",
+        "thirdTask": "4*3, 4*2",
+        "fourthTask": "5*6, 5*3",
+        "fifthTask": "2*5",
+        "sixthTask": "5*4",
+        "seventhTask": "4*4",
+        "eightTask": "5*2",
+        "ninthTask": "7*9"
+    },
+    "division": {
+        "title": "Деление",
+        "firstTask": "6/2, 8/2",
+        "secondTask": "9/3, 12/4",
+        "thirdTask": "10/2, 15/3",
+        "fourthTask": "18/3, 20/4",
+        "fifthTask": "16/4",
+        "sixthTask": "14/2",
+        "seventhTask": "12/3",
+        "eightTask": "24/4",
+        "ninthTask": "30/5"
+    },
+    "numbersOperationsUpTo100": {
+        "title": "Сложение и вычитание до 100",
+        "firstTask": "25+10, 34+20",
+        "secondTask": "56-30, 67-40",
+        "thirdTask": "78+10, 89+5",
+        "fourthTask": "91-10, 100-20",
+        "fifthTask": "45+25",
+        "sixthTask": "65-15",
+        "seventhTask": "80+10",
+        "eightTask": "90-30",
+        "ninthTask": "55+35"
+    },
+    "divisionAndMultiplication": {
+        "title": "Умножение и деление",
+        "firstTask": "5*3, 6*4",
+        "secondTask": "8/2, 12/3",
+        "thirdTask": "7*5, 9*3",
+        "fourthTask": "18/6, 20/5",
+        "fifthTask": "4*4",
+        "sixthTask": "15/3",
+        "seventhTask": "12*4",
+        "eightTask": "24/4",
+        "ninthTask": "12*2/4"
+    },
+    "multi-digitNumbersOperations": {
+        "title": "Сложение и вычитание многозначных чисел",
+        "firstTask": "123+456, 789+321",
+        "secondTask": "654-321, 987-654",
+        "thirdTask": "234+567, 890+123",
+        "fourthTask": "765-432, 543-210",
+        "fifthTask": "115+272",
+        "sixthTask": "333-151",
+        "seventhTask": "444+555",
+        "eightTask": "671-272",
+        "ninthTask": "777+888"
+    },
+    "simpleEquations": {
+        "title": "Простые уравнения",
+        "firstTask": "x + 5 = 10, x - 3 = 2",
+        "secondTask": "2x = 8, x/2 = 4",
+        "thirdTask": "x + 7 = 14, x - 6 = 3",
+        "fourthTask": "3x = 15, x/3 = 5",
+        "fifthTask": "x + 4 = 8",
+        "sixthTask": "x - 2 = 6",
+        "seventhTask": "2x = 12",
+        "eightTask": "x/4 = 3",
+        "ninthTask": "(x-34)/4 = 12"
+    },
+    "fractions": {
+        "title": "Дроби",
+        "firstTask": "1/2 + 1/2, 1/3 + 1/3",
+        "secondTask": "3/2 - 1/4, 5/6 - 2/6",
+        "thirdTask": "2/3 + 1/3, 3/5 + 2/5",
+        "fourthTask": "4/7 - 1/7, 5/8 - 2/4",
+        "fifthTask": "3/4 + 1/4",
+        "sixthTask": "7/5 - 4/9",
+        "seventhTask": "6/8 + 1/8",
+        "eightTask": "90/10 - 5/10",
+        "ninthTask": "20/3 + 12/6"
+    },
+    "perimeterAndArea": {
+        "title": "Периметр и площадь",
+        "firstTask": "Периметр квадрата со стороной 4 см",
+        "secondTask": "Площадь квадрата со стороной 5 см",
+        "thirdTask": "Периметр прямоугольника со сторонами 3 см и 6 см",
+        "fourthTask": "Площадь прямоугольника со сторонами 2 см и 7 см",
+        "fifthTask": "Периметр треугольника со сторонами 3 см, 4 см и 5 см",
+        "sixthTask": "Площадь треугольника с основанием 6 см и высотой 4 см",
+        "seventhTask": "Периметр прямоугольника со сторонами 5 см и 8 см",
+        "eightTask": "Площадь прямоугольника со сторонами 4 см и 9 см",
+        "ninthTask": "Периметр квадрата со стороной 7 см"
+    },
+    "multiplyingAndDividingMulti-digitNumbers": {
+        "title": "Умножение и деление многозначных чисел",
+        "firstTask": "25*4, 36*2",
+        "secondTask": "48/3, 60/4",
+        "thirdTask": "72*3, 84*2",
+        "fourthTask": "96/4, 108/6",
+        "fifthTask": "35*5",
+        "sixthTask": "50/2",
+        "seventhTask": "63*3/4",
+        "eightTask": "81/9*2/10",
+        "ninthTask": "99*2/4*8"
+    }
+}

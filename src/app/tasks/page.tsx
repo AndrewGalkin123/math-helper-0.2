@@ -7,7 +7,7 @@ import items from "./TestsMenuItems";
 import { useState } from "react";
 
 export default function tasks() {
-  const [currentTheme, setCurrentTheme] = useState("");
+  const [currentTheme, setCurrentTheme] = useState("numbersOperationsUpTo10");
   const onClick: MenuProps["onClick"] = (e) => {
     setCurrentTheme(e.key);
   };

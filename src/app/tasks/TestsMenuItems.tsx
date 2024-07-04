@@ -12,25 +12,77 @@ const items: MenuItem[] = [
     key: "firstGrade",
     label: "1 класс",
     icon: <CalculatorOutlined />,
-    children: [],
+    children: [
+      {
+        key: "numbersOperationsUpTo10",
+        label: "Сложение и вычитание до 10",
+      },
+      {
+        key: "numbersComparisonsUpTo10",
+        label: "Сравнение чисел до 10",
+      },
+      {
+        key: "simpleProblems",
+        label: "Решение простых задач",
+      },
+    ],
   },
   {
     key: "secondGrade",
     label: "2 класс",
     icon: <CalculatorOutlined />,
-    children: [],
+    children: [
+      {
+        key: "multiplication",
+        label: "Таблица умножения",
+      },
+      {
+        key: "division",
+        label: "Деление",
+      },
+      {
+        key: "numbersOperationsUpTo100",
+        label: "Сложение и вычитание до 100",
+      },
+    ],
   },
   {
     key: "thirdGrade",
     label: "3 класс",
     icon: <CalculatorOutlined />,
-    children: [],
+    children: [
+      {
+        key: "divisionAndMultiplication",
+        label: "Умножение и деление",
+      },
+      {
+        key: "multi-digitNumbersOperations",
+        label: "Сложение и вычитание многозначных чисел",
+      },
+      {
+        key: "simpleEquations",
+        label: "Простые уравнения",
+      },
+    ],
   },
   {
     key: "fourthGrade",
     label: "4 класс",
     icon: <CalculatorOutlined />,
-    children: [],
+    children: [
+      {
+        key: "fractions",
+        label: "Дроби",
+      },
+      {
+        key: "perimeterAndArea",
+        label: "Периметр и площадь",
+      },
+      {
+        key: "multiplyingAndDividingMulti-digitNumbers",
+        label: "Умножение и деление многозначных чисел",
+      },
+    ],
   },
   {
     key: "fifthGrade",
