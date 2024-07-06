@@ -88,13 +88,31 @@ const items: MenuItem[] = [
     key: "fifthGrade",
     label: "5 класс",
     icon: <CalculatorOutlined />,
-    children: [],
+    children: [
+      {
+        key: "divisionWithRemainder",
+        label: "Деление с остатком",
+      },
+      {
+        key: "decimals",
+        label: "Десятичные дроби",
+      },
+    ],
   },
   {
     key: "sixthGrade",
     label: "6 класс",
     icon: <CalculatorOutlined />,
-    children: [],
+    children: [
+      {
+        key: "relationshipsAndProportions",
+        label: "Отношения и пропорции",
+      },
+      {
+        key: "positiveAndNegativeNumbers",
+        label: "Положительные и отрицательные числа",
+      },
+    ],
   },
   {
     key: "seventhGrade",
