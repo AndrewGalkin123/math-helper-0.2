@@ -118,7 +118,20 @@ const items: MenuItem[] = [
     key: "seventhGrade",
     label: "7 класс",
     icon: <CalculatorOutlined />,
-    children: [],
+    children: [
+      {
+        key: "power",
+        label: "Степень с натуральным показателем и её свойства",
+      },
+      {
+        key: "monomials",
+        label: "Одночлены",
+      },
+      {
+        key: "polynomials",
+        label: "Многочлены",
+      },
+    ],
   },
   {
     key: "eighthGrade",
