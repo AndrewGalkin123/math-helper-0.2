@@ -142,6 +142,10 @@ const items: MenuItem[] = [
         key: "quadraticEquations",
         label: "Квадратные уравнения",
       },
+      {
+        key: "inequalities",
+        label: "Неравенства",
+      },
     ],
   },
   {
