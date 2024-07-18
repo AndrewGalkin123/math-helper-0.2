@@ -152,7 +152,16 @@ const items: MenuItem[] = [
     key: "ninthGrade",
     label: "9 класс",
     icon: <CalculatorOutlined />,
-    children: [],
+    children: [
+      {
+        key: "numberSequences",
+        label: "Числовые последовательности. Прогрессии",
+      },
+      {
+        key: "combinatoricsStatisticsTheoryProbability",
+        label: "Элементы комбинаторики, статистики и теории вероятностей",
+      },
+    ],
   },
   {
     key: "tenthGrade",
