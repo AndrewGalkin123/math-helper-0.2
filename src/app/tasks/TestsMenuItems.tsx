@@ -137,7 +137,12 @@ const items: MenuItem[] = [
     key: "eighthGrade",
     label: "8 класс",
     icon: <CalculatorOutlined />,
-    children: [],
+    children: [
+      {
+        key: "quadraticEquations",
+        label: "Квадратные уравнения",
+      },
+    ],
   },
   {
     key: "ninthGrade",
