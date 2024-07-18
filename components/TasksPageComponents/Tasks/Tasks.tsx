@@ -11,7 +11,16 @@ const Tasks: React.FC<TasksProps> = ({ theme }) => {
 
   // Замена символов \n на <br />
   const formatText = (text: string) => {
-    return text.replace(/\n/g, "<br />");
+    if (!text) return "";
+
+    // Замена дробей вида \frac{a}{b} на HTML код
+    const withFractions = text.replace(
+      /\\\(\\frac{([^{}]+)}{([^{}]+)}\\\)/g,
+      "<sup>$1</sup>&frasl;<sub>$2</sub>"
+    );
+
+    // Замена символов \n на <br />
+    return withFractions.replace(/\n/g, "<br />");
   };
 
   if (!themeData) {
