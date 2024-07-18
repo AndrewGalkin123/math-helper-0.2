@@ -1,3 +1,4 @@
+import React from "react";
 import tests from "../../../public/content/Tests.json";
 import "./Tasks.css";
 
@@ -8,6 +9,11 @@ interface TasksProps {
 const Tasks: React.FC<TasksProps> = ({ theme }) => {
   const themeData = tests[theme];
 
+  // Замена символов \n на <br />
+  const formatText = (text: string) => {
+    return text.replace(/\n/g, "<br />");
+  };
+
   if (!themeData) {
     return <div>Нет данных для этой темы</div>;
   }
@@ -17,39 +23,84 @@ const Tasks: React.FC<TasksProps> = ({ theme }) => {
       <div className="tasks">
         <div className="task">
           <span className="task-number">Задание №1</span>
-          <div className="task-description">{themeData.firstTask}</div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: formatText(themeData?.firstTask || ""),
+            }}
+            className="task-description"
+          ></div>
         </div>
         <div className="task">
           <span className="task-number">Задание №2</span>
-          <div className="task-description">{themeData.secondTask}</div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: formatText(themeData?.secondTask || ""),
+            }}
+            className="task-description"
+          ></div>
         </div>
         <div className="task">
           <span className="task-number">Задание №3</span>
-          <div className="task-description">{themeData.thirdTask}</div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: formatText(themeData?.thirdTask || ""),
+            }}
+            className="task-description"
+          ></div>
         </div>
         <div className="task">
           <span className="task-number">Задание №4</span>
-          <div className="task-description">{themeData.fourthTask}</div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: formatText(themeData?.fourthTask || ""),
+            }}
+            className="task-description"
+          ></div>
         </div>
         <div className="task">
           <span className="task-number">Задание №5</span>
-          <div className="task-description">{themeData.fifthTask}</div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: formatText(themeData?.fifthTask || ""),
+            }}
+            className="task-description"
+          ></div>
         </div>
         <div className="task">
           <span className="task-number">Задание №6</span>
-          <div className="task-description">{themeData.sixthTask}</div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: formatText(themeData?.sixthTask || ""),
+            }}
+            className="task-description"
+          ></div>
         </div>
         <div className="task">
           <span className="task-number">Задание №7</span>
-          <div className="task-description">{themeData.seventhTask}</div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: formatText(themeData?.seventhTask || ""),
+            }}
+            className="task-description"
+          ></div>
         </div>
         <div className="task">
           <span className="task-number">Задание №8</span>
-          <div className="task-description">{themeData.eightTask}</div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: formatText(themeData?.eightTask || ""),
+            }}
+            className="task-description"
+          ></div>
         </div>
         <div className="task">
           <span className="task-number">Задание №9</span>
-          <div className="task-description">{themeData.ninthTask}</div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: formatText(themeData?.ninthTask || ""),
+            }}
+            className="task-description"
+          ></div>
         </div>
       </div>
     </div>
