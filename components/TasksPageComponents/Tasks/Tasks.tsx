@@ -28,7 +28,7 @@ const Tasks: React.FC<TasksProps> = ({ theme }) => {
   }
   return (
     <div className="tasks-container">
-      <h1>Тест на тему {themeData.title}</h1>
+      <h1>{themeData.title}</h1>
       <div className="tasks">
         <div className="task">
           <span className="task-number">Задание №1</span>

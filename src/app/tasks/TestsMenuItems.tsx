@@ -167,7 +167,20 @@ const items: MenuItem[] = [
     key: "tenthGrade",
     label: "10 класс",
     icon: <CalculatorOutlined />,
-    children: [],
+    children: [
+      {
+        key: "trigonometricEquations",
+        label: "Тригонометрические уравнения",
+      },
+      {
+        key: "derivative",
+        label: "Производная и её применение",
+      },
+      {
+        key: "mixingFormulas",
+        label: "Формулы сведения",
+      },
+    ],
   },
   {
     key: "eleventhGrade",
