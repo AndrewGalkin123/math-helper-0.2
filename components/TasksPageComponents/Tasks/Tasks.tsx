@@ -97,7 +97,7 @@ const Tasks: React.FC<TasksProps> = ({ theme }) => {
           <span className="task-number">Задание №8</span>
           <div
             dangerouslySetInnerHTML={{
-              __html: formatText(themeData?.eightTask || ""),
+              __html: formatText(themeData?.eighthTask || ""),
             }}
             className="task-description"
           ></div>

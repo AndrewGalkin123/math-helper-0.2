@@ -186,7 +186,20 @@ const items: MenuItem[] = [
     key: "eleventhGrade",
     label: "11 класс",
     icon: <CalculatorOutlined />,
-    children: [],
+    children: [
+      {
+        key: "exponentialAndLogarithmicFunctions",
+        label: "Показательная и логарифмическая функции",
+      },
+      {
+        key: "initialAndIntegral",
+        label: "Первоначальная функция и интеграл",
+      },
+      {
+        key: "mathematicalStatistics",
+        label: "Математическая статистика",
+      },
+    ],
   },
 ];
 
