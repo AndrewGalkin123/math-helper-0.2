@@ -5,7 +5,7 @@ const Introduction: React.FC = () => {
     <div className="introduction">
       <h1>Математика 2024. Все темы для школьников которые нужно знать</h1>
       <br></br>
-      <img src="https://abrakadabra.fun/uploads/posts/2022-02/1644293895_1-abrakadabra-fun-p-risunki-matematike-3.png"></img>
+      <img src="pexels-pixabay-256417.jpg"></img>
       <p>
         Математика — это ключ к расширению своих горизонтов, врата к пониманию
         мира вокруг нас. Каждое уравнение, каждая формула — это кирпичик в

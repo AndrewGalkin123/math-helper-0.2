@@ -1,12 +1,42 @@
 .introduction {
   display: flex;
-  width: 65%;
+  width: 100%;
   flex-direction: column;
-  margin-right: 10%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .introduction h1 {
   font-weight: 500;
   font-size: 28px;
   color: rgb(39, 39, 39);
+  text-align: center;
+}
+
+.introduction img {
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.introduction p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .introduction {
+    width: 65%;
+    margin-right: 10%;
+  }
+
+  .introduction h1 {
+    font-size: 32px;
+  }
+
+  .introduction p {
+    font-size: 20px;
+  }
 }
