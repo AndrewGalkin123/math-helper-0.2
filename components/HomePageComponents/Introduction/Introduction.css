@@ -3,8 +3,6 @@
   width: 100%;
   flex-direction: column;
   margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
 }
 
 .introduction h1 {
@@ -29,7 +27,6 @@
 @media (min-width: 768px) {
   .introduction {
     width: 65%;
-    margin-right: 10%;
   }
 
   .introduction h1 {
