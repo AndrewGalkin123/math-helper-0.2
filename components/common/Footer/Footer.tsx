@@ -38,13 +38,16 @@ const Footer: React.FC = () => {
             <h4>Полезная информация</h4>
             <ul>
               <li>
-                <Link href="">FAQ</Link>
+                <Link href="/faq">FAQ</Link>
               </li>
               <li>
                 <Link href="">Полезные ссылки</Link>
               </li>
               <li>
-                <Link target="_blank" href="">
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScJ1tDNHO2PGDOSlk5O439rSO5Ie7hTZbykz7iKxK3G0o41nA/viewform?usp=sf_link"
+                >
                   Написать нам
                 </Link>
               </li>
@@ -53,7 +56,7 @@ const Footer: React.FC = () => {
           <div className="footer-col">
             <h4>Наши ссылки</h4>
             <div className="social-links">
-              <a href="#">
+              <a target="_blank" href="https://t.me/tgCodeCraft">
                 <i className="fab fa-telegram"></i>
               </a>
               <a href="#">
@@ -62,7 +65,10 @@ const Footer: React.FC = () => {
               <a href="#">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="#">
+              <a
+                target="_blank"
+                href="https://github.com/AndrewGalkin123?tab=overview&from=2024-07-01&to=2024-07-22"
+              >
                 <i className="fab fa-github"></i>
               </a>
             </div>
