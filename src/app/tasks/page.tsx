@@ -4,7 +4,7 @@ import { TasksMenu } from "../../../components/TasksPageComponents/TasksMenu/Tas
 import { Searcher } from "../../../components/common/Search/Search";
 import type { MenuProps } from "antd";
 import items from "./TestsMenuItems";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 type MenuItem = {
   key: string;
