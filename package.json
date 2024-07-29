@@ -10,14 +10,17 @@
   },
   "dependencies": {
     "antd": "^5.17.0",
+    "katex": "^0.16.11",
     "next": "^14.2.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-katex": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-katex": "^3.0.4",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
