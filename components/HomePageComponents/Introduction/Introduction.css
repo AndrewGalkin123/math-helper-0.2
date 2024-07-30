@@ -1,8 +1,7 @@
 .introduction {
   display: flex;
-  width: 100%;
+  width: 60%;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 .introduction h1 {
@@ -24,16 +23,11 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .introduction {
-    width: 65%;
+    width: 100%;
   }
-
   .introduction h1 {
-    font-size: 32px;
-  }
-
-  .introduction p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }

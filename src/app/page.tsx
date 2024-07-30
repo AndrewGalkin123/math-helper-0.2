@@ -4,8 +4,8 @@ import { Themes } from "../../components/HomePageComponents/Themes/Themes";
 
 export default function Home() {
   return (
-    <main style={{ width: "80%" }}>
-      <div style={{ display: "flex" }}>
+    <main>
+      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         <Introduction />
         <AdditionalInfo />
       </div>

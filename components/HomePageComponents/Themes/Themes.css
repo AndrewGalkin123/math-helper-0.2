@@ -5,6 +5,13 @@
   padding: 20px;
 }
 
+.themes h1 {
+  font-weight: 500;
+  font-size: 28px;
+  color: rgb(39, 39, 39);
+  text-align: center;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -35,36 +42,41 @@
 
 /* Медиазапросы для адаптивности */
 @media (max-width: 768px) {
-  .table thead {
+  .table,
+  .table thead,
+  .table tbody,
+  .table th,
+  .table td,
+  .table tr {
+    display: block;
+  }
+
+  .table thead tr {
     display: none;
   }
 
-  .table tbody tr {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .table tbody td {
-    display: block;
-    text-align: right;
-    border: none;
-    border-bottom: 1px solid #ddd;
+  .table td {
     position: relative;
     padding-left: 50%;
+    text-align: right;
   }
 
-  .table tbody td::before {
+  .table td::before {
     content: attr(data-label);
     position: absolute;
     left: 10px;
     width: calc(50% - 20px);
-    padding-right: 10px;
     white-space: nowrap;
     text-align: left;
     font-weight: bold;
   }
 
-  .table tbody td:last-child {
-    border-bottom: 0;
+  .table tbody tr {
+    margin-bottom: 20px;
+  }
+
+  .table tbody td {
+    text-align: center;
+    vertical-align: middle;
   }
 }
