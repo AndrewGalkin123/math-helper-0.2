@@ -1,10 +1,11 @@
 "use client";
-import { Menu } from "antd";
-import React, { useState } from "react";
+
+import React, { useState, useEffect } from "react";
 import type { MenuProps } from "antd";
 import { MainLearningInfo } from "../../../components/LearningResourcesComponents/MainLearningInfo/MainLearningInfo";
 import { Searcher } from "../../../components/common/Search/Search";
 import items from "./MenuItems";
+import { ItemsMenu } from "../../../components/LearningResourcesComponents/MenuItems/Menu";
 
 type MenuItem = {
   key: string;
@@ -16,9 +17,14 @@ type MenuItem = {
 export default function learningResources() {
   const [current, setCurrent] = useState("integers");
   const [searchedItems, setSearchedItems] = useState(items);
+  const [menuMode, setMenuMode] = useState<
+    "vertical" | "inline" | "horizontal"
+  >("inline");
+
   const onClick: MenuProps["onClick"] = (e) => {
     setCurrent(e.key);
   };
+
   const filterItems = (
     menuItems: MenuItem[],
     searchTerm: string
@@ -40,25 +46,45 @@ export default function learningResources() {
       })
       .filter((item) => item !== null) as MenuItem[];
   };
+
   const onSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.toLowerCase();
     const filteredItems = filterItems(items, value);
     setSearchedItems(filteredItems);
   };
+
+  const handleResize = () => {
+    if (window.innerWidth <= 768) {
+      setMenuMode("vertical");
+    } else {
+      setMenuMode("inline");
+    }
+  };
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <main>
       <Searcher onSearch={onSearch} />
-      <div style={{ display: "flex" }}>
-        <Menu
+      <div
+        style={{
+          display: "flex",
+          flexDirection: window.innerWidth <= 768 ? "column" : "row",
+        }}
+      >
+        <ItemsMenu
           onClick={onClick}
-          defaultOpenKeys={["sub1"]}
-          selectedKeys={[current]}
-          items={searchedItems}
-          style={{ width: "25%", flex: "auto" }}
+          searchedItems={searchedItems}
+          current={current}
+          mode={menuMode}
         />
-        <div style={{ width: "75%", flex: "auto", padding: "20px" }}>
-          <MainLearningInfo theme={current} />
-        </div>
+        <MainLearningInfo theme={current} />
       </div>
     </main>
   );

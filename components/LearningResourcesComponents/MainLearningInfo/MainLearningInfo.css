@@ -27,3 +27,22 @@
   font-size: 1em;
   margin-bottom: 15px;
 }
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+  .learning-info {
+    padding: 10px;
+  }
+
+  .learning-info h1 {
+    font-size: 1.5em;
+  }
+
+  .learning-info h3 {
+    font-size: 1.2em;
+  }
+
+  .learning-info p {
+    font-size: 0.9em;
+  }
+}
