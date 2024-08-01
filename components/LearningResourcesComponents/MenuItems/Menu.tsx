@@ -10,7 +10,7 @@ interface ItemsMenuProps {
   searchedItems: MenuItem[];
   onClick: MenuProps["onClick"];
   current: string;
-  mode: "vertical" | "inline" | "horizontal";
+  mode: "vertical" | "inline";
 }
 
 const ItemsMenu: React.FC<ItemsMenuProps> = ({
@@ -27,10 +27,10 @@ const ItemsMenu: React.FC<ItemsMenuProps> = ({
       items={searchedItems}
       mode={mode}
       style={{
-        width: mode === "vertical" ? "100%" : "25%",
+        width: mode === "inline" ? "100%" : "25%",
         flex: "auto",
         overflow: "auto",
-        maxHeight: mode === "vertical" ? "50vh" : "100vh",
+        maxHeight: mode === "inline" ? "50vh" : "100vh",
       }}
     />
   );

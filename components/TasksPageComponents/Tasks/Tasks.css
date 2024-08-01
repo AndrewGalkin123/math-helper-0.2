@@ -43,3 +43,9 @@
 h1 {
   color: #007bff;
 }
+
+@media (max-width: 768px) {
+  .tasks-container {
+    width: 100%;
+  }
+}

@@ -10,16 +10,28 @@ interface TasksMenuProps {
   items: MenuItem[];
   onClick: MenuProps["onClick"];
   current: string[];
+  mode: "vertical" | "inline";
 }
 
-const TasksMenu: React.FC<TasksMenuProps> = ({ items, onClick, current }) => {
+const TasksMenu: React.FC<TasksMenuProps> = ({
+  items,
+  onClick,
+  current,
+  mode,
+}) => {
   return (
     <Menu
       onClick={onClick}
       defaultOpenKeys={["firstGrade"]}
       selectedKeys={current}
       items={items}
-      style={{ width: "25%", flex: "auto" }}
+      mode={mode}
+      style={{
+        width: mode === "inline" ? "100%" : "25%",
+        flex: "auto",
+        overflow: "auto",
+        maxHeight: mode === "inline" ? "50vh" : "100vh",
+      }}
     />
   );
 };

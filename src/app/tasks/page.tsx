@@ -4,7 +4,7 @@ import { TasksMenu } from "../../../components/TasksPageComponents/TasksMenu/Tas
 import { Searcher } from "../../../components/common/Search/Search";
 import type { MenuProps } from "antd";
 import items from "./TestsMenuItems";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 type MenuItem = {
   key: string;
@@ -16,6 +16,7 @@ type MenuItem = {
 export default function tasks() {
   const [currentTheme, setCurrentTheme] = useState("numbersOperationsUpTo10");
   const [searchedItems, setSearchedItems] = useState<MenuItem[]>(items);
+  const [menuMode, setMenuMode] = useState<"vertical" | "inline">("inline");
 
   const onClick: MenuProps["onClick"] = (e) => {
     setCurrentTheme(e.key);
@@ -49,14 +50,34 @@ export default function tasks() {
       .filter((item) => item !== null) as MenuItem[];
   };
 
+  const handleResize = () => {
+    if (window.innerWidth <= 768) {
+      setMenuMode("inline");
+    } else {
+      setMenuMode("vertical");
+    }
+  };
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <main>
       <Searcher onSearch={onSearch} />
-      <div style={{ display: "flex" }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: window.innerWidth <= 768 ? "column" : "row",
+        }}
+      >
         <TasksMenu
           current={[currentTheme]}
           onClick={onClick}
           items={searchedItems}
+          mode={menuMode}
         />
         <Tasks theme={currentTheme} />
       </div>

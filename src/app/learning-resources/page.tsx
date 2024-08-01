@@ -17,9 +17,7 @@ type MenuItem = {
 export default function learningResources() {
   const [current, setCurrent] = useState("integers");
   const [searchedItems, setSearchedItems] = useState(items);
-  const [menuMode, setMenuMode] = useState<
-    "vertical" | "inline" | "horizontal"
-  >("inline");
+  const [menuMode, setMenuMode] = useState<"vertical" | "inline">("inline");
 
   const onClick: MenuProps["onClick"] = (e) => {
     setCurrent(e.key);
@@ -55,9 +53,9 @@ export default function learningResources() {
 
   const handleResize = () => {
     if (window.innerWidth <= 768) {
-      setMenuMode("vertical");
-    } else {
       setMenuMode("inline");
+    } else {
+      setMenuMode("vertical");
     }
   };
 
