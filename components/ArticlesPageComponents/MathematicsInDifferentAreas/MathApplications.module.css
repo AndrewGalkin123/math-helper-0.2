@@ -31,3 +31,9 @@
 .mathBlock li {
   margin-bottom: 5px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}

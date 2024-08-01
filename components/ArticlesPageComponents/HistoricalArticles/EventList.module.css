@@ -43,3 +43,9 @@
   font-size: 14px;
   color: #555;
 }
+
+@media (max-width: 768px) {
+  .eventList {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}

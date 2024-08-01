@@ -22,7 +22,7 @@ const MathematicsInDifferentAreas = () => {
             <strong>Кинематика и динамика:</strong>
             <ul>
               <li>
-                Уравнения движения: <BlockMath math="v = v_0 + at" />,{" "}
+                Уравнения движения: <BlockMath math="v = v_0 + at" />
                 <BlockMath math="s = v_0t + \frac{1}{2}at^2" />
               </li>
               <li>
